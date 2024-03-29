@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8" />
+
+        <script>
+
+           function somar(){
+               const n1 = document.getElementById('n1').value
+               const n2 = document.getElementById('n2').value
+                              
+               const soma = Number(n1) + Number (n2)
+
+               document.getElementById('resultado').innerHTML = "O resultado da operação é " + soma
+           }
+
+            function subtrair(){
+               const n1 = document.getElementById('n1').value
+               const n2 = document.getElementById('n2').value
+
+               const subtrair = Number(n1) - Number (n2)
+
+               document.getElementById('resultado').innerHTML = "O resultado da operação é " + subtrair
+           }
+
+            function Multiplicar(){
+               const n1 = document.getElementById('n1').value
+               const n2 = document.getElementById('n2').value
+
+               const Multiplicar = Number(n1) * Number (n2)
+
+               document.getElementById('resultado').innerHTML = "O resultado da operação é " + Multiplicar
+           }
+
+
+            function Dividir(){
+               const n1 = document.getElementById('n1').value
+               const n2 = document.getElementById('n2').value
+
+               const Dividir = Number(n1) / Number (n2)
+                      
+               document.getElementById('resultado').innerHTML = "O resultado da operação é " + Dividir
+           }
+
+        </script>
+
+    </head>
+    <body>
+
+        <form action="">
+
+            n1: <input type="text" id="n1"/><br>
+            n2: <input type="text" id="n2"/><br>
+
+            <input type="button" value="Somar" onclick="somar()">
+            <input type="button" value="Subtrair" onclick="subtrair()">
+            <input type="button" value="Multiplicar" onclick="Multiplicar()">
+            <input type="button" value="Dividir" onclick="Dividir()">
+
+            <h1 id="resultado">O resultado da operação é  </h1>
+        </form>
+    </body>
+</html>
